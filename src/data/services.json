@@ -1,0 +1,417 @@
+{
+  "storage": {
+    "label": "File & Image Storage",
+    "icon": "🗄️",
+    "services": [
+      {
+        "name": "Cloudinary",
+        "website": "https://cloudinary.com",
+        "freeTier": "25GB storage + 25GB bandwidth",
+        "tiers": [
+          { "limitGB": 25, "price": 0 },
+          { "limitGB": 100, "price": 89 },
+          { "limitGB": 500, "price": 224 }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works perfectly in Nigeria, no card restrictions",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "AWS S3",
+        "website": "https://aws.amazon.com/s3",
+        "freeTier": "5GB for 12 months",
+        "tiers": [
+          { "limitGB": 5, "price": 0 },
+          { "limitGB": 50, "price": 1.15 },
+          { "limitGB": 100, "price": 2.30 },
+          { "limitGB": 500, "price": 11.50 }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card. Nigerian cards often declined.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Supabase Storage",
+        "website": "https://supabase.com",
+        "freeTier": "1GB storage",
+        "tiers": [
+          { "limitGB": 1, "price": 0 },
+          { "limitGB": 100, "price": 25 },
+          { "limitGB": 500, "price": 25 }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works with most Nigerian cards on paid plans",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Firebase Storage",
+        "website": "https://firebase.google.com",
+        "freeTier": "5GB storage",
+        "tiers": [
+          { "limitGB": 5, "price": 0 },
+          { "limitGB": 50, "price": 1.30 },
+          { "limitGB": 100, "price": 2.60 },
+          { "limitGB": 500, "price": 13.00 }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Google billing works with some Nigerian cards",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Uploadcare",
+        "website": "https://uploadcare.com",
+        "freeTier": "3GB storage",
+        "tiers": [
+          { "limitGB": 3, "price": 0 },
+          { "limitGB": 100, "price": 49 },
+          { "limitGB": 500, "price": 99 }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card for paid plans",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      }
+    ]
+  },
+  "email": {
+    "label": "Email Sending",
+    "icon": "📧",
+    "services": [
+      {
+        "name": "Resend",
+        "website": "https://resend.com",
+        "freeTier": "3,000 emails/month",
+        "tiers": [
+          { "limitEmails": 3000, "price": 0 },
+          { "limitEmails": 50000, "price": 20 },
+          { "limitEmails": 100000, "price": 45 }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works with Nigerian cards, developer-friendly",
+        "recommended": true,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Brevo",
+        "website": "https://brevo.com",
+        "freeTier": "300 emails/day (~9,000/month)",
+        "tiers": [
+          { "limitEmails": 9000, "price": 0 },
+          { "limitEmails": 20000, "price": 25 },
+          { "limitEmails": 60000, "price": 34 }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works in Nigeria, good free tier",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "SendGrid",
+        "website": "https://sendgrid.com",
+        "freeTier": "100 emails/day (~3,000/month)",
+        "tiers": [
+          { "limitEmails": 3000, "price": 0 },
+          { "limitEmails": 50000, "price": 19.95 },
+          { "limitEmails": 100000, "price": 89.95 }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Nigerian accounts sometimes flagged. Requires Twilio verification.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Mailgun",
+        "website": "https://mailgun.com",
+        "freeTier": "1,000 emails/month for 3 months",
+        "tiers": [
+          { "limitEmails": 1000, "price": 0 },
+          { "limitEmails": 10000, "price": 15 },
+          { "limitEmails": 50000, "price": 35 }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card after trial",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Postmark",
+        "website": "https://postmarkapp.com",
+        "freeTier": "100 emails/month",
+        "tiers": [
+          { "limitEmails": 100, "price": 0 },
+          { "limitEmails": 10000, "price": 15 },
+          { "limitEmails": 50000, "price": 50 }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      }
+    ]
+  },
+  "hosting": {
+    "label": "Backend Hosting",
+    "icon": "🖥️",
+    "services": [
+      {
+        "name": "Render",
+        "website": "https://render.com",
+        "freeTier": "Free tier (sleeps after 15min inactivity)",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "Spins down after inactivity — 30-60s cold start" },
+          { "label": "Starter", "price": 7, "note": "Always on, no cold starts" },
+          { "label": "Standard", "price": 25, "note": "More RAM and CPU" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Accepts Nigerian cards on paid plans. Free tier works without card.",
+        "recommended": true,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Railway",
+        "website": "https://railway.app",
+        "freeTier": "$5 credit/month",
+        "tiers": [
+          { "label": "Trial", "price": 0, "note": "$5 free credit, then pay as you go" },
+          { "label": "Hobby", "price": 5, "note": "$5/month + usage" },
+          { "label": "Pro", "price": 20, "note": "More resources" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works with Nigerian cards",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Fly.io",
+        "website": "https://fly.io",
+        "freeTier": "Limited free allowance",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "Very limited, requires credit card" },
+          { "label": "Pay as you go", "price": 1.94, "note": "From ~$1.94/month" }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card even for free tier",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Vercel (Serverless)",
+        "website": "https://vercel.com",
+        "freeTier": "Generous free tier for serverless functions",
+        "tiers": [
+          { "label": "Hobby", "price": 0, "note": "Serverless only, great for APIs" },
+          { "label": "Pro", "price": 20, "note": "More execution time and bandwidth" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Free tier requires no card. Works in Nigeria.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Heroku",
+        "website": "https://heroku.com",
+        "freeTier": "No free tier (removed in 2022)",
+        "tiers": [
+          { "label": "Eco", "price": 5, "note": "Sleeps after 30min" },
+          { "label": "Basic", "price": 7, "note": "Always on" },
+          { "label": "Standard", "price": 25, "note": "More resources" }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card. Nigerian cards often declined.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      }
+    ]
+  },
+  "database": {
+    "label": "Database",
+    "icon": "🗃️",
+    "services": [
+      {
+        "name": "MongoDB Atlas",
+        "website": "https://www.mongodb.com/atlas",
+        "freeTier": "512MB shared cluster (M0)",
+        "tiers": [
+          { "label": "M0 Free", "price": 0, "note": "512MB, shared, no card required" },
+          { "label": "M2", "price": 9, "note": "2GB dedicated" },
+          { "label": "M5", "price": 25, "note": "5GB dedicated" },
+          { "label": "M10", "price": 57, "note": "10GB+ production ready" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Free tier requires no card. Works perfectly in Nigeria.",
+        "recommended": true,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Supabase (Postgres)",
+        "website": "https://supabase.com",
+        "freeTier": "500MB, 2 free projects",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "500MB, pauses after 1 week inactivity" },
+          { "label": "Pro", "price": 25, "note": "8GB, no pausing" },
+          { "label": "Team", "price": 599, "note": "Enterprise features" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works with most Nigerian cards",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Neon (Postgres)",
+        "website": "https://neon.tech",
+        "freeTier": "512MB, 1 project",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "512MB, serverless Postgres" },
+          { "label": "Launch", "price": 19, "note": "10GB storage" },
+          { "label": "Scale", "price": 69, "note": "50GB storage" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Free tier no card required",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Firebase Firestore",
+        "website": "https://firebase.google.com",
+        "freeTier": "1GB storage, 50k reads/day",
+        "tiers": [
+          { "label": "Spark (Free)", "price": 0, "note": "1GB, 50k reads, 20k writes/day" },
+          { "label": "Blaze (Pay as you go)", "price": 0.06, "note": "$0.06/100k reads after free tier" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Google billing works with some Nigerian cards",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      }
+    ]
+  },
+  "payments": {
+    "label": "Payment Processing",
+    "icon": "💳",
+    "services": [
+      {
+        "name": "Paystack",
+        "website": "https://paystack.com",
+        "freeTier": "No monthly fee",
+        "tiers": [
+          { "label": "Per transaction", "price": 0, "note": "1.5% + ₦100 local, capped at ₦2,000" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Built for Nigeria. Best option for local payments. Accepts all Nigerian cards.",
+        "recommended": true,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Flutterwave",
+        "website": "https://flutterwave.com",
+        "freeTier": "No monthly fee",
+        "tiers": [
+          { "label": "Per transaction", "price": 0, "note": "1.4% local, 3.8% international" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Pan-African payments. Works across multiple African countries.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Stripe",
+        "website": "https://stripe.com",
+        "freeTier": "No monthly fee",
+        "tiers": [
+          { "label": "Per transaction", "price": 0, "note": "2.9% + $0.30 per successful charge" }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "⚠️ Nigerian developers cannot create Stripe accounts directly. Requires a US/UK entity or third party workaround.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Lemonsqueezy",
+        "website": "https://lemonsqueezy.com",
+        "freeTier": "No monthly fee",
+        "tiers": [
+          { "label": "Per transaction", "price": 0, "note": "5% + $0.50 per transaction" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Nigerian developers can sign up. Good for digital products and SaaS.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      }
+    ]
+  },
+  "auth": {
+    "label": "Authentication",
+    "icon": "🔐",
+    "services": [
+      {
+        "name": "Supabase Auth",
+        "website": "https://supabase.com",
+        "freeTier": "50,000 MAU",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "50,000 monthly active users" },
+          { "label": "Pro", "price": 25, "note": "100,000 MAU included" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "No restrictions for Nigerian developers",
+        "recommended": true,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Firebase Auth",
+        "website": "https://firebase.google.com",
+        "freeTier": "10,000 verifications/month",
+        "tiers": [
+          { "label": "Spark (Free)", "price": 0, "note": "10k phone verifications/month" },
+          { "label": "Blaze", "price": 0.0055, "note": "$0.0055 per verification after free tier" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "Works in Nigeria",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Auth0",
+        "website": "https://auth0.com",
+        "freeTier": "7,500 MAU",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "7,500 MAU" },
+          { "label": "Essential", "price": 23, "note": "Up to 1,000 MAU at base" },
+          { "label": "Professional", "price": 240, "note": "More features" }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card for paid plans",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Clerk",
+        "website": "https://clerk.com",
+        "freeTier": "10,000 MAU",
+        "tiers": [
+          { "label": "Free", "price": 0, "note": "10,000 MAU" },
+          { "label": "Pro", "price": 25, "note": "25,000 MAU" }
+        ],
+        "africaRestrictions": true,
+        "africaNotes": "Requires international card for paid plans",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      },
+      {
+        "name": "Custom JWT (DIY)",
+        "website": null,
+        "freeTier": "Free",
+        "tiers": [
+          { "label": "Free forever", "price": 0, "note": "Build your own with jsonwebtoken + bcrypt" }
+        ],
+        "africaRestrictions": false,
+        "africaNotes": "No third party, no restrictions. Full control.",
+        "recommended": false,
+        "lastUpdated": "May 2025"
+      }
+    ]
+  }
+}
