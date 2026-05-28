@@ -19,7 +19,7 @@ Shareable results — share your stack estimate with anyone
 React + Vite · React Router · Pure CSS · JSON pricing data (no API calls)
 
 🚀 Getting Started
-bashgit clone https://github.com/yourusername/devbudget.git
+bashgit clone https://github.com/Abdul20009/devbudget
 cd devbudget
 npm install
 npm run dev
