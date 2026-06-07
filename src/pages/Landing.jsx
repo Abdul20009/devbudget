@@ -5,7 +5,7 @@ const TICKER = ['Render', 'MongoDB Atlas', 'Cloudinary', 'Resend', 'Supabase', '
 
 export default function Landing() {
   const navigate = useNavigate()
-  const [tickIdx, setTickIdx] = useState(0)
+  const [tickIdx, setTickIdx] = useState(0)   
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
